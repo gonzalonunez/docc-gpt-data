@@ -1,0 +1,18 @@
+[submodule "swift-distributed-tracing"]
+	path = swift-distributed-tracing
+	url = git@github.com:apple/swift-distributed-tracing.git
+[submodule "swift-log"]
+	path = swift-log
+	url = git@github.com:apple/swift-log.git
+[submodule "swift-metrics"]
+	path = swift-metrics
+	url = git@github.com:apple/swift-metrics.git
+[submodule "Plot"]
+	path = Plot
+	url = git@github.com:JohnSundell/Plot.git
+[submodule "OpenAI"]
+	path = OpenAI
+	url = git@github.com:mattt/OpenAI.git
+[submodule "swift-syntax"]
+	path = swift-syntax
+	url = git@github.com:apple/swift-syntax.git
