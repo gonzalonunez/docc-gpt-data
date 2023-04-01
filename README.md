@@ -1,6 +1,6 @@
 # DoccGPT Data
 
-This repository allows you to generate a dataset of well-documented Swift code. I created it in an attempt to improve [DoccGPT](https://github.com/gonzalonunez/docc-gpt) by fine-tuning one of OpenAI's base models. I'm sad to report that it doesn't look like it is immediately worth it. I might be after significantly more fine-tuning (and significantly more dollars), but even then given the context windows of the soon-to-land GPT-4 models there is likely no point in paying so much to get a good model that still has context window of 2048 tokens.
+This repository allows you to generate a dataset of well-documented Swift code. I created it in an attempt to improve [DoccGPT](https://github.com/gonzalonunez/docc-gpt) by fine-tuning one of OpenAI's base models. I'm sad to report that it doesn't look like it is immediately worth it. It might be after significantly more fine-tuning (and significantly more dollars), but even then given the context windows of the soon-to-land GPT-4 models there is likely no point in paying so much to get a good base model that still has context window of 2048 tokens. Hopefully we can fine-tune GPT-4 in the future, or perhaps we may not even need to.
 
 Here's an overview of what I did:
 
