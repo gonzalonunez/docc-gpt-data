@@ -40,6 +40,6 @@ OPENAI_API_KEY=<YOUR_KEY> openai tools fine_tunes.prepare_data -f data.jsonl
 
 After using OpenAI's [CLI preparation tool](https://platform.openai.com/docs/guides/fine-tuning/cli-data-preparation-tool), you should see the following message:
 
-> After you’ve fine-tuned a model, remember that your prompt has to end with the indicator ? string `\n\n###\n\n` for the model to start generating completions, rather than continuing with the prompt. Make sure to include `stop=[" <END>"]` so that the generated texts ends at the expected place.
+> After you’ve fine-tuned a model, remember that your prompt has to end with the indicator string `\n\n###\n\n` for the model to start generating completions, rather than continuing with the prompt. Make sure to include `stop=[" <END>"]` so that the generated texts ends at the expected place.
 
 From here, you should be able to use this model with [DoccGPT](https://github.com/gonzalonunez/docc-gpt), freeing up the token window for entire `.swift` files without the need for a few-shot prompt. Happy self-documenting 😄
