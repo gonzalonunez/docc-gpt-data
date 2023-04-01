@@ -1,6 +1,14 @@
 # DoccGPT Data
 
-A dataset of well-documented Swift code used to fine-tune a new model for [DoccGPT](https://github.com/gonzalonunez/docc-gpt).
+This repository allows you to generate a dataset of well-documented Swift code. I created it in an attempt to improve [DoccGPT](https://github.com/gonzalonunez/docc-gpt) by fine-tuning one of OpenAI's base models. I'm sad to report that it doesn't look like it is immediately worth it. I might be after significantly more fine-tuning (and significantly more dollars), but even then given the context windows of the soon-to-land GPT-4 models there is likely no point in paying so much to get a good model that still has context window of 2048 tokens.
+
+Here's an overview of what I did:
+
+1. Running through directions in the README generated the `data.jsonl` file resulted in a little over 200 viable prompt/completion pairs. This is the minimum number of examples that OpenAI suggests for fine-tuning.
+
+2. First, I fine-tuned `ada` for $0.40. It was able to put comments in the right place for a simple `enum`, but they failed to describe the code well.
+
+3. Next, I fine-tuned `davinci` for about $30. It left better comments, in the right places, but at the end of the day it is still not even remotely close to what I was seeing with the more advanced out-of-the-box models. It struggled to document all of the fields in a simple `User` `struct` with 4 properties and a function.
 
 ## Basic usage
 
