@@ -20,6 +20,5 @@ with open("prompt.txt", 'r') as prompt_file:
         temperature=0)
 
     print(response.choices[0].text)
-
     print('\n---\n')
     print(response.usage)
