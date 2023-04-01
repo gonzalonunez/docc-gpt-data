@@ -1,17 +1,8 @@
 import Foundation
-import ImageIO
 
-public enum GifLoop {
-  case absolute(Int)
-
-  public static var infinite = GifLoop.absolute(0)
-
-  public var dict: [String: Int] {
-    switch self {
-    case .absolute(let loopCount):
-      return [
-        kCGImagePropertyGIFLoopCount as String: loopCount
-      ]
-    }
-  }
+public struct User: Codable {
+  public let email: String
+  public let password: String
+  public let firstName: String
+  public let lastName: String
 }

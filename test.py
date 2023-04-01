@@ -3,7 +3,7 @@ import openai
 
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--key', help='Your OpenAI secret API key')
-parser.add_argument('--model', default='ada:ft-personal-2023-04-01-02-01-39', help='The name of the model to use')
+parser.add_argument('--model', default='davinci:ft-personal-2023-04-01-02-55-47', help='The name of the model to use')
 
 args = parser.parse_args()
 openai.api_key = args.key
