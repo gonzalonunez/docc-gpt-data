@@ -2,3 +2,4 @@
 files
 data.jsonl
 data_prepared.jsonl
+__pycache__/
