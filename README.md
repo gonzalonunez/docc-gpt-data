@@ -42,7 +42,7 @@ brew install swift-format
 
 6. Run `python data.py`. This takes all of the prompt/completion pairs in `/files` and formats them in such a way that they can later be used to fine-tune an OpenAI Model. The formatted data is saved into a JSON file named `data.jsonl`. You can now delete the `/files` directory if you'd like to, but I find that it's nice to inspect manually before spending the time/money to fine-tune a model.
 
-7. This `data.jsonl` file is what you will pass over to OpenAI for fine-tuning. Follow the instructions [here](https://platform.openai.com/docs/guides/fine-tuning/cli-data-preparation-tool) and fine-tine your model. Using OpenAI's tool will take care of removing examples that are too long.
+7. This `data.jsonl` file is what you will pass over to OpenAI for fine-tuning. Follow the instructions [here](https://platform.openai.com/docs/guides/fine-tuning/cli-data-preparation-tool) and fine-tune your model. Using OpenAI's tool will take care of removing examples that are too long.
 
 ```
 OPENAI_API_KEY=<YOUR_KEY> openai tools fine_tunes.prepare_data -f data.jsonl
